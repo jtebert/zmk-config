@@ -1,0 +1,5 @@
+config SHIELD_HOTPAW_LEFT
+    def_bool $(shields_list_contains,hotpaw_left)
+
+config SHIELD_HOTPAW_RIGHT
+    def_bool $(shields_list_contains,hotpaw_right)

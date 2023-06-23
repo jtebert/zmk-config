@@ -1,0 +1,11 @@
+file_format: "1"
+id: hotpaw
+name: Hotpaw
+type: shield
+url: https://juliaebert.com
+requires: [nice_nano]
+features:
+  - keys
+siblings:
+  - hotpaw_left
+  - hotpaw_right

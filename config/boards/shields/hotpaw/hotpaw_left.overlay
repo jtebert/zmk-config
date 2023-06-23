@@ -1,0 +1,22 @@
+#include "hotpaw.dtsi"
+
+&kscan0 {
+  col-gpios
+  = <&pro_micro_d 21 GPIO_ACTIVE_HIGH> // col 0
+  , <&pro_micro_d 20 GPIO_ACTIVE_HIGH> // col 1
+  , <&pro_micro_d 19 GPIO_ACTIVE_HIGH> // col 2
+  , <&pro_micro_d 18 GPIO_ACTIVE_HIGH> // col 3
+  , <&pro_micro_d 15 GPIO_ACTIVE_HIGH> // col 4
+  , <&pro_micro_d 14 GPIO_ACTIVE_HIGH> // col 5
+  , <&pro_micro_d 9 GPIO_ACTIVE_HIGH> // col 6
+  , <&pro_micro_d 8 GPIO_ACTIVE_HIGH> // col 7
+  ;
+
+  row-gpios
+  = <&pro_micro_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row A from the schematic file
+  , <&pro_micro_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row B from the schematic file
+  , <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row C from the schematic file
+  , <&pro_micro_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row D from the schematic file
+  , <&pro_micro_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row E from the schematic file
+  ;
+};
