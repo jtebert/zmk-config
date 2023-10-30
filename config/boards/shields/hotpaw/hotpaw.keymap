@@ -24,7 +24,7 @@ ZMK_UNICODE_PAIR(u_neq, N2, N2, N6, N0, N0, N0, B, N1)  // ≠ and ±
 
         default_layer {
 // ┌────┬────┬────┬────┬────┬────┐                          ┌────┬────┬────┬────┬────┬────┐
-// │ ESC│  1 │  2 │  3 │  4 │  5 │                          │  6 │  7 │  8 │  9 │  0 │  - │
+// │ ESC│  1 │  2 │  3 │  4 │  5 │                          │  6 │  7 │  8 │  9 │  0 │PrSc│
 // ├────┼────┼────┼────┼────┼────┤                          ├────┼────┼────┼────┼────┼────┤
 // │ TAB│  Q │  W │  F │  P │  G │                          │  J │  L │  U │  Y │  ; │  [ │
 // ├────┼────┼────┼────┼────┼────┼────┐                ┌────┼────┼────┼────┼────┼────┼────┤
@@ -38,7 +38,7 @@ ZMK_UNICODE_PAIR(u_neq, N2, N2, N6, N0, N0, N0, B, N1)  // ≠ and ±
 //                            │    │    │ END│  │PGDN│    │    │
 //                            └────┴────┴────┘  └────┴────┴────┘
             bindings = <
-    &kp ESC    &kp N1    &kp N2     &kp N3    &kp N4    &kp N5                                                  &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp BSLH
+    &kp ESC    &kp N1    &kp N2     &kp N3    &kp N4    &kp N5                                                  &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp PSCRN
     &kp TAB    &kp Q     &kp W      &kp F     &kp P     &kp G                                                   &kp J      &kp L     &kp U     &kp Y     &kp SEMI  &kp LBKT
     &kp MINUS  &kp A     &kp R      &kp S     &kp T     &kp D      &kp EQUAL                          &kp LPAR  &kp H      &kp N     &kp E     &kp I     &kp O     &kp SQT
     &kp DEL    &kp Z     &kp X      &kp C     &kp V     &kp B      &mo 1         &kp HOME   &kp PGUP  &kp RPAR  &kp K      &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RBKT
@@ -62,11 +62,11 @@ ZMK_UNICODE_PAIR(u_neq, N2, N2, N6, N0, N0, N0, B, N1)  // ≠ and ±
 //                            │    │    │    │  │VlDn│    │    │
 //                            └────┴────┴────┘  └────┴────┴────┘
             bindings = <
-    &bootloader &kp F1       &kp F2       &kp F3    &kp F4    &kp F5                                               &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &bootloader
-    &trans      &trans       &trans       &trans    &trans    &trans                                               &trans    &trans    &de_ue    &trans    &trans    &trans
-    &u_dash     &de_ae       &trans       &trans    &u_tm     &u_deg    &u_neq                           &trans    &trans    &trans    &u_euro   &trans    &de_oe    &trans
-    &trans      &trans       &trans       &trans    &trans    &trans    &trans    &trans    &kp C_VOL_UP &trans    &trans    &trans    &trans    &trans    &trans    &trans
-    &bt BT_CLR  &out OUT_BLE &out OUT_USB &trans    &trans    &trans    &trans    &trans    &kp C_VOL_DN &trans    &kp C_PP  &u_left   &u_down   &u_up     &u_right  &trans
+    &bootloader &kp F1       &kp F2       &kp F3    &kp F4    &kp F5                                                 &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &bootloader
+    &trans      &trans       &trans       &trans    &trans    &trans                                                 &trans    &trans    &de_ue    &trans    &trans    &trans
+    &u_dash     &de_ae       &trans       &trans    &u_tm     &u_deg    &u_neq                             &trans    &trans    &trans    &u_euro   &trans    &de_oe    &trans
+    &trans      &trans       &trans       &trans    &trans    &trans    &trans    &bt BT_PRV  &kp C_VOL_UP &trans    &trans    &trans    &trans    &trans    &trans    &trans
+    &bt BT_CLR  &out OUT_BLE &out OUT_USB &trans    &trans    &trans    &trans    &bt BT_NXT  &kp C_VOL_DN &trans    &kp C_PP  &u_left   &u_down   &u_up     &u_right  &trans
             >;
 
         };
